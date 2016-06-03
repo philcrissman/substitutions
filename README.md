@@ -1,8 +1,12 @@
 # Substitutions
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/substitutions`. To experiment with that code, run `bin/console` for an interactive prompt.
+Based on the fine _SUBSTITUTIONS_ comics from [xkcd](http://xkcd.com):
 
-TODO: Delete this and the text above, and describe your gem
+![SUBSTITUTIONS](http://imgs.xkcd.com/comics/substitutions.png)
+
+![SUBSTITUTIONS2](http://imgs.xkcd.com/comics/substitutions_2.png)
+
+![SUBSTITUTIONS3](http://imgs.xkcd.com/comics/substitutions_3.png)
 
 ## Installation
 
@@ -22,7 +26,15 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+You create a new instance of `Substitutions::Text`, supplying the text you'd like to modify; then call `substitute` on the object.
+
+```
+sub = Substitutions::Text.new("Underwater 'lost city' is a natural phenomenon, say scientists")
+
+sub.substitute #=> "Underwater 'lost city' is a natural phenomenon, say Channing Tatum and his friends"
+```
+
+
 
 ## Development
 

@@ -12,4 +12,11 @@ class SubstitutionsTest < Minitest::Test
     expected = "these dudes I know kinda probably saw a Elf-Lord who is guilty and everyone knows it"
     assert_equal expected, substitutions.substitute!
   end
+
+  def test_years_and_minutes
+    starting = "years and years and minutes and years"
+    expected = "minutes and minutes and years and minutes"
+    sub = Substitutions::Text.new(starting)
+    assert_equal expected, sub.years_and_minutes(starting)
+  end
 end
