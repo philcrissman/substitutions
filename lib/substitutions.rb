@@ -63,7 +63,7 @@ module Substitutions
       @text = text
     end
 
-    def substitute!
+    def substitute
       # TODO swap minutes and years. Write test.
       substituted = @text
       substituted = years_and_minutes(substituted)
