@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite time='0.000031' skipped='0' failures='0' errors='1' name="SubstitutionsTest" assertions='1' tests='2'>
+  <testcase time='0.000023' name="test_it_substitutes" assertions='0'>
+    <error type='NoMethodError' message="undefined method `new&#39; for Substitutions:Module">/Users/philcrissman/Workspace/sandbox/substitutions/test/substitutions_test.rb:11:in `test_it_substitutes&#39;
+    </error>
+  </testcase>
+  <testcase time='0.000007' name="test_that_it_has_a_version_number" assertions='1'>
+  </testcase>
+</testsuite>
